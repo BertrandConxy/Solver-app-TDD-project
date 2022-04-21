@@ -8,4 +8,8 @@ class Solver
             arg.downto(1).reduce(:*)
         end
     end
+    
+    def reverse_string(arg)
+        arg.reverse
+    end
 end
