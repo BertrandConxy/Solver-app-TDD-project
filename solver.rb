@@ -12,4 +12,16 @@ class Solver
     def reverse_string(arg)
         arg.reverse
     end
+
+    def fizzbuzz(arg)
+        if (arg % 3 == 0 && arg % 5 == 0)
+            "fizzbuzz"
+        elsif arg % 5 == 0
+            "buzz"
+        elsif arg % 3 == 0
+            "fizz"
+        else
+            arg.to_s
+        end
+    end
 end

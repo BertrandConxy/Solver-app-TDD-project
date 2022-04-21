@@ -35,7 +35,7 @@ describe Solver do
         end
 
         it "returns 'fizzbuzz' when argument is divisible by 3 and 5" do
-            expect(@solver.fizzbuzz(15)).to eql("fizzbuzz")
+            expect(@solver.fizzbuzz(30)).to eql("fizzbuzz")
         end
 
         it "returns that argument when it is not divisible by 3 or 5" do
