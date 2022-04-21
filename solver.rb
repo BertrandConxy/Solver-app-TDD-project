@@ -3,7 +3,7 @@ class Solver
     if arg.zero?
       1
     elsif arg.negative?
-      "can't work on negative integers"
+      raise ArgumentError
     else
       arg.downto(1).reduce(:*)
     end

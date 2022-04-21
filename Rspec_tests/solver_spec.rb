@@ -14,7 +14,7 @@ describe Solver do
     end
 
     it 'raises Error when argument is negative integer' do
-      expect(@solver.find_factorial(-5)).to eql("can't work on negative integers")
+      expect { @solver.find_factorial(-5) }.to raise_error('ArgumentError')
     end
   end
 
